@@ -54,13 +54,20 @@ Disallow: /message.php
 
 going to <IP>/message.php
 
+![message.php](./img/message.png)
+
 and find some messages:
 
 ```text
 john: hello admin, my friends alice don't find her password
 admin: the password of alice is:
 ```
-try to login into the website with the logins find in message.php and explore the website, then we find an section called upload where we can upload a php reverse shell [generator of reverse shell](http://revshells.com) use [pwnat-cs](https://github.com/calebstewart/pwncat) for listener and and go to `<IP>/upload/revshell.php` and getting the flag:
+try to login into the website
+![index.php](./img/login.png)
+with the logins find in message.php and explore the website
+, then we find an section called send files
+![message.php](./img/upload.png)
+where we can upload a php reverse shell [generator of reverse shell](http://revshells.com) use [pwnat-cs](https://github.com/calebstewart/pwncat) for listener and and go to `<IP>/upload/revshell.php` and getting the flag:
 
 ```bash
 ┌──(ismael㉿kali)-[~/Documents/CTF/THM]
